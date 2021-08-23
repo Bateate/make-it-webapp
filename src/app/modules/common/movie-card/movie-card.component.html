@@ -1,4 +1,12 @@
-<mat-card class="card-container h-100">
-    <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
-    
+<mat-card class="card-container h-100" (click)="openMovieInfo()">
+    <!-- <img mat-card-image [src]="movie?.image?.medium" alt="Photo of a Shiba Inu"> -->
+    <div class="d-flex justify-content-center">
+        <img class="movie-item-image" [src]="movie?.image?.medium">
+    </div>
+
+    <mat-card-content>
+        <div class="card-name w-100 d-flex justify-content-center">
+            {{movie.name}}
+        </div>
+    </mat-card-content>
 </mat-card>

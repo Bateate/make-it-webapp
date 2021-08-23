@@ -1,7 +1,9 @@
 import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
+import { SearchComponent } from "./search.component";
 
 const routes: Routes = [
+    { path: '', component: SearchComponent },
 ]
 
 @NgModule({
@@ -9,4 +11,4 @@ const routes: Routes = [
 	exports: [RouterModule]
 })
 
-export class SearchRoutingComponent { }
+export class SearchRoutingModule { }

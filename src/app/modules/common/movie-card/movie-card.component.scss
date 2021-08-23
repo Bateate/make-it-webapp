@@ -1,3 +1,48 @@
 .card-container {
     height: 150px;
+    background-color: transparent;
+    cursor: pointer;
+    &:hover {
+        // display: block;
+        .card-name{
+            color: red;
+        }
+        .movie-item-image {
+            opacity: 0.5;
+        }
+    }
+}
+
+.movie-item-image {
+    height: 100%;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    object-fit: contain;
+    // &.no-img{
+    //     background-image: url(../../../../img/no-film.jpg);
+    //     background-size: contain;
+    // }
+}
+
+.card-name{
+    border-radius: 5px;
+    position: absolute;
+    bottom: 1px;
+    right: 5px;
+    color: #fff;
+    background-color: #000;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.card {
+    border: none !important;
+}
+
+
+mat-card.mat-card.mat-focus-indicator.card-container.p-5.h-100.w-100.card{
+    border: none;
+
 }

@@ -21,7 +21,7 @@ const exported = [...imported];
     imports: [
         ...imported
     ],
-    exports: [...exported, declarations]
+    exports: [...exported, ...declarations]
 
 })
 

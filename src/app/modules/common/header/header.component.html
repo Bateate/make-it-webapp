@@ -1,20 +1,20 @@
 <div class="row p-2 h-100 header-style align-items-center h-100">
     
-    <div class="col-auto logo-text-style">
+    <a class="col-auto logo-text-style" href="main">
         MK IT
         <span class="logo-dot px-2"></span>
-    </div>
+    </a>
     
-    <div class="col logo-text-style">
-        Movie Collection
-    </div>
-    
-    <div class="col-auto">
-        <input class="input-style py-2 px-3" placeholder="Search by movie title..."/>
+    <div class="col logo-text-style" style="color: #e50914">
+        And Chill
     </div>
     
     <div class="col-auto">
-        <button class="search-button py-2 px-3">
+        <input #searchString class="input-style py-2 px-3" placeholder="Search by movie title..." (keyup.enter)="search(searchString.value)"/>
+    </div>
+    
+    <div class="col-auto">
+        <button class="goust-button py-2 px-3" (click)="search(searchString.value)">
             Search
         </button>
     </div>

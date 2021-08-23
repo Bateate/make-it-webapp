@@ -1,23 +1,56 @@
-.background-color {
-    background-color: #393a3c;
-}
+// .background-color {
+//     background-color: #393a3c;
+// }
 
 .background-img {
     background-image: url("../../../img/BG-en-20210817-popsignuptwoweeks-perspective_alpha_website_medium.jpg");
     background-color: #cccccc;
     height: 400px;
+    box-shadow: -2px -200px 103px -53px rgba(0, 0, 0, 1) inset;
+    -webkit-box-shadow: -2px -200px 103px -53px rgba(0, 0, 0, 1) inset;
+    -moz-box-shadow: -2px -200px 103px -53px rgba(0, 0, 0, 1) inset;
 }
 
-
-.your-favorites-container{
+.your-favorites-container {
     width: 98vw;
     height: 400px;
     height: auto;
-    background-color: #393a3c;
+    // background-color: #393a3c;
+    background-color: #000;
 }
 
 .your-facorite-title {
     font-size: 30px;
     font-weight: 700;
     color: #fff;
+}
+
+.card {
+    max-width: 60%;
+
+    &:hover {
+        max-width: 65%;
+    }
+}
+
+.login-change-buttons{
+    background-color: #000;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+    height: 40px;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 5px;
+    cursor: pointer;
+    &.active{
+        background-color: #e50914;
+    }
+}
+
+.login-container{
+    background-color: black;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }

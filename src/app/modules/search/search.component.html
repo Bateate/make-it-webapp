@@ -1,1 +1,7 @@
-Search
+<div class="row justify-content-center">
+    <ng-container *ngFor="let movie of searchedMovies">
+        <div class="col-auto" *ngIf="movie?.image?.medium">
+            <movie-card [movie]="movie"></movie-card>
+        </div>
+    </ng-container>
+</div>

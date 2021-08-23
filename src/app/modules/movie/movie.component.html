@@ -1,1 +1,37 @@
-Movie
+<div class="container align-items-center pt-5" style="color: #fff;">
+    <div class="row">
+        <div class="col-auto">
+            <img [src]="movie?.image?.medium" alt="">
+        </div>
+        <div class="col">
+            <div class="title" *ngIf="movie?.name">
+                {{movie?.name}}
+            </div>
+            <div class="py-3" *ngIf="movie?.runtime">
+                {{movie?.runtime}} minutes
+            </div>
+            <div *ngIf="movie?.summary">
+                {{movie?.summary}}
+            </div>
+            <div class="pt-2 pb-3" *ngIf="movie?.officialSite">
+                <a>
+                    {{movie?.officialSite}}
+                </a>
+            </div>
+            <div class="pt-2 pb-3">
+                <button class="goust-button py-1 px-3">
+                    Add In Favorites
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="title pt-5">
+        Your Review
+    </div>
+    <div class="py-4">
+        Rating
+    </div>
+    <textarea class="textarea" placeholder="Your private notes and comments about the movie...">
+
+    </textarea>
+</div>
