@@ -1,15 +1,20 @@
+// .login-container {
+//     // background-color: rgb(20, 20, 20);
+//     background-color: #282c34;
+// }
+
 // .background-color {
 //     background-color: #393a3c;
 // }
 
-.background-img {
-    background-image: url("../../../img/BG-en-20210817-popsignuptwoweeks-perspective_alpha_website_medium.jpg");
-    background-color: #cccccc;
-    height: 400px;
-    box-shadow: -2px -200px 103px -53px rgba(0, 0, 0, 1) inset;
-    -webkit-box-shadow: -2px -200px 103px -53px rgba(0, 0, 0, 1) inset;
-    -moz-box-shadow: -2px -200px 103px -53px rgba(0, 0, 0, 1) inset;
-}
+// .background-img {
+//     background-image: url("../../../img/BG-en-20210817-popsignuptwoweeks-perspective_alpha_website_medium.jpg");
+//     background-color: #cccccc;
+//     height: 400px;
+//     box-shadow: -2px -200px 103px -53px rgba(0, 0, 0, 1) inset;
+//     -webkit-box-shadow: -2px -200px 103px -53px rgba(0, 0, 0, 1) inset;
+//     -moz-box-shadow: -2px -200px 103px -53px rgba(0, 0, 0, 1) inset;
+// }
 
 .your-favorites-container {
     width: 98vw;
@@ -55,9 +60,6 @@
     border-bottom-right-radius: 10px;
 }
 
-.login-button{
-    background-color: #e50914;
-    border: none;
-    border-radius: 8px;
-    color: #fff;
+.mat-dialog-container#mat-dialog-0{
+    background: transparent !important;
 }

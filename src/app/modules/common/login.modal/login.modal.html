@@ -1,0 +1,59 @@
+<!-- <div class="row w-100" style="min-height: 250px; min-width: 250px;">
+    <div class="col h-100 col-12 offset-0"> -->
+        <!-- <ng-container *ngIf="!user"> -->
+            <div style="min-height: 250px; min-width: 250px; background-color: transparent;">
+                <div class="row">
+                    <div class="col-md-6 col-12 login-change-buttons" 
+                    [class.active]="!loginFlag"
+                    (click)="loginFlag = true">
+                        Sign in
+                    </div>
+                    <div class="col-md-6 col-12 login-change-buttons" 
+                    [class.active]="loginFlag"
+                    (click)="loginFlag = false">
+                        Sign up
+                    </div>
+                </div>
+                <div class="row" *ngIf="loginFlag">
+                    <form class="col-12 login-container pb-3">
+                        <div class="pt-4 w-100">
+                            Username
+                        </div>
+                        <input #userIn value="bateate" class="input-style w-100" type="text" style="background-color: white; color: black;">
+                        <div class="pt-3 w-100">
+                            Password
+                        </div>
+                        <input #passIn value="123123" class="input-style w-100" type="password"  style="background-color: white; color: black;">
+                        <div class="d-flex justify-content-end pt-4"> 
+                            <button class="goust-button py-1 px-3" (click)="signIn({username: userIn.value, password: passIn.value}, $event)">
+                                Login
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            
+                <div class="row" *ngIf="!loginFlag">
+                    <div class="col login-container pb-3">
+                        <div class="pt-4 w-100">
+                            Email
+                        </div>
+                        <input #emailUp class="input-style w-100" type="text" style="background-color: white; color: black;">
+                        <div class="pt-3 w-100">
+                            Username
+                        </div>
+                        <input #userUp class="input-style w-100" type="text" style="background-color: white; color: black;">
+                        <div class="pt-3 w-100">
+                            Password
+                        </div>
+                        <input #passUp class="input-style w-100" type="password"  style="background-color: white; color: black;">
+                        <div class="d-flex justify-content-end pt-4"> 
+                            <button class="goust-button py-1 px-3" (click)="signUp({email: emailUp.value, username: userUp.value, password: passUp.value, favorites: []})">
+                                Register
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!-- </ng-container> -->
+    <!-- </div>
+</div> -->

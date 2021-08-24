@@ -1,4 +1,4 @@
-<div class="row p-2 h-100 header-style align-items-center h-100">
+<div class="row p-2 h-100 header-style align-items-center h-100" style="width: 100vw;">
     
     <a class="col-auto logo-text-style" href="main">
         MK IT
@@ -16,6 +16,12 @@
     <div class="col-auto">
         <button class="goust-button py-2 px-3" (click)="search(searchString.value)">
             Search
+        </button>
+    </div>
+
+    <div class="col-auto">
+        <button class="login-button" style="background-color: red;" (click)="openLoginModal()">
+            {{user ? 'Logout' : 'Login'}}
         </button>
     </div>
 

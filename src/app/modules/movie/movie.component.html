@@ -18,20 +18,44 @@
                     {{movie?.officialSite}}
                 </a>
             </div>
-            <div class="pt-2 pb-3">
-                <button class="goust-button py-1 px-3">
+            <div class="pt-2 pb-3" *ngIf="user">
+                <button class="goust-button py-1 px-3" (click)="addInFavorites(movie.id)">
                     Add In Favorites
                 </button>
             </div>
         </div>
     </div>
-    <div class="title pt-5">
-        Your Review
-    </div>
-    <div class="py-4">
-        Rating
-    </div>
-    <textarea class="textarea" placeholder="Your private notes and comments about the movie...">
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <div class="title pt-5">
+                Your Review
+            </div>
+            <div class="py-4">
+                Rating
+            </div>
+            <textarea #comment class="textarea w-100" placeholder="Your private notes and comments about the movie...">
+        
+            </textarea>
+            <div class="d-flex justify-content-end pt-3">
+                <button class="goust-button" (click)="sendComment(comment.value)">
+                    Submit
+                </button>
+            </div>
 
-    </textarea>
+            <ng-container *ngFor="let comment of movie.comments">
+                <div class="pl-3" style="background-color: #1a1a1a; border-radius: 10px;">
+                    <div *ngIf="comment.username" class="mt-5" style="font-size: 20px;">
+                        User: {{comment.username}}
+                    </div>
+                    <div *ngIf="comment.comments" class="pt-2">
+                        Comment:
+                    </div>
+                    <div  *ngIf="comment.comments" class="pt-3">
+                        {{comment.comments}}
+                    </div>
+                </div>
+            </ng-container>
+        </div>
+    </div>
+
 </div>

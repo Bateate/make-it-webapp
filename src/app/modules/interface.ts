@@ -25,5 +25,26 @@ export interface CardInterface {
         original?: string
     }, 
     summary?: string,
-    officialSite?: string
+    officialSite?: string,
+    comments?: any,
+}
+
+export interface SignUp {
+    email: string,
+    username: string,
+    password: string,
+    favorites: Array<string>
+}
+
+export interface SignIn {
+    username: string,
+    password: string,
+}
+
+export interface User {
+    id?: number,
+    email?: string,
+    username?: string,
+    password?: string,
+    favorites?: Array<string>
 }

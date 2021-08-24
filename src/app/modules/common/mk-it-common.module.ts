@@ -3,6 +3,7 @@ import { HeaderComponent } from "./header/header.component"
 import { MovieCardComponent } from "./movie-card/movie-card.component"
 import { MatCardModule } from '@angular/material/card';
 import { CommonModule } from '@angular/common';
+import { LoginModal } from "./login.modal/login.modal";
 
 
 const imported = [
@@ -12,7 +13,8 @@ const imported = [
 
 const declarations = [
     HeaderComponent,
-    MovieCardComponent
+    MovieCardComponent,
+    LoginModal
 ]
 
 

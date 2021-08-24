@@ -1,8 +1,9 @@
-<div class="mk-it-main-container">
-    <header style="height: 8vh;"> </header>
+<div class="mk-it-main-container" style="min-height: 100vh">
+    <header class="d-flex justify-content-center align-items-center" 
+    style="width: 100vw;"> </header>
     
-    <div class="row">
-        <div class="col" style="height: 92vh;">
+    <div class="row h-100" style="min-height: inherit;">
+        <div class="col">
             <router-outlet></router-outlet>
         </div>
     </div>
